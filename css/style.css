@@ -713,6 +713,10 @@ img {
           box-sizing: border-box;
   width: 60rem;
   position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .modal .modal-content .modal-img {
   width: 52rem;
@@ -779,7 +783,7 @@ img {
     display: none;
   }
   .modal .modal-info {
-    padding: 0;
+    width: 100vw;
   }
   .modal .modal-info p {
     line-height: 2rem;
