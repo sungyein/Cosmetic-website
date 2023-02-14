@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Duo-tone buildable Foundation",
+      "price": "30",
+      "saleprice": "38",
+      "url": "./images/product-1.png",
+      "category": "Best"
+    },
+    {
+      "id": 2,
+      "title": "Generation Z",
+      "price": "28",
+      "saleprice": "40",
+      "url": "./images/product-2.png",
+      "category": "Best"
+    },
+    {
+      "id": 3,
+      "title": "Cream blush & Highlight Duo",
+      "price": "28",
+      "saleprice": "40",
+      "url": "./images/product-3.png",
+      "category": "Best"
+    }
+  ]
+}

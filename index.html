@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.png"
+      type="image/png"
+    />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--  Swiper CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--  Custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Cosmetics Shop</title>
+  </head>
+  <body>
+
+    <!-- Modal -->
+    <div class="modal d-flex" id="modal"> 
+      <div class="modal-content d-flex-2">
+        <div class="modal-img"></div>
+        <div class="modal-info">
+          <h2>Take Canopy to your inbox.</h2>
+          <p>
+            We’ll send you emails about our product launches, beauty routines, events, and the idea.
+          </p>
+          <p class="modal-sub-info">
+            Yes, I would like to receive email updates from Canopy. Unsubscribe anytime. For more information, see our Privacy Policy
+          </p>
+          <form action="">
+            <input type="email" placeholder="Email Address">
+            <button type="submit">Continue</button>
+          </form>
+          <a href="#none" class="close-modal">close</a>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="banner">
+        <div class="lnb container">
+          <a href="#none">
+            <span class="hide">세일 띠 배너</span>
+            <p>
+              UP TO SALE 50%
+            </p>
+          </a>
+        </div>
+      </div>
+      <nav class="container d-flex-2">
+        <div class="logo">
+          <a href="#none">
+            <img src="./images/logo.svg" alt="header-logo">.
+          </a>
+        </div>
+        <ul class="gnb d-flex">
+          <li><a href="#">Shop All</a></li>
+          <li><a href="#">Makeup</a></li>
+          <li><a href="#">Shop Our Sets</a></li>
+          <li><a href="#">Find Your Shade</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#" class="open-modal">Login</a></li>
+        </ul>
+      </nav>
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <section id="main">
+     <div class="main-inner container d-flex">
+      <div class="main-desc">
+        <div class="main-desc-wrap">
+          <h1>The Best Duo-tone buildable Foundation</h1>
+          <p>
+            You're unique - your foundation should be too. Create the best foundation for your skin tone with Minisque
+          </p>
+          <a href="#none" class="btn-1 d-flex">
+            <span>Shop Foundation</span>
+            <svg width="77" height="49" viewBox="0 0 77 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="52.5" cy="24.5" r="24" stroke="#47362B"/>
+              <path d="M56.3536 25.3536C56.5488 25.1583 56.5488 24.8417 56.3536 24.6464L53.1716 21.4645C52.9763 21.2692 52.6597 21.2692 52.4645 21.4645C52.2692 21.6597 52.2692 21.9763 52.4645 22.1716L55.2929 25L52.4645 27.8284C52.2692 28.0237 52.2692 28.3403 52.4645 28.5355C52.6597 28.7308 52.9763 28.7308 53.1716 28.5355L56.3536 25.3536ZM0 25.5L56 25.5V24.5L0 24.5L0 25.5Z" fill="#47362B"/>
+              </svg>
+              
+          </a>
+        </div>
+      </div>
+      <div class="main-images">
+        <img src="./images/main-banner.png" alt="메인 배너 이미지 입니다.">
+      </div>
+     </div>
+    </section>
+
+    <section id="featured-products">
+      <div class="featured-products-inner container">
+        <div class="featured-products-title-wrap">
+          <h2>Minisque’s Featured Products</h2>
+        </div>
+        <div class="products container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="products">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="top">
+                    <img src="./images/product-1.png">
+                  </div>
+                  <div class="bottom">
+                    <h4>Duo-tone buildable Foundation</h4>
+                    <span>50 shades</span>
+                    <div class="d-flex btn-2">
+                      <div>Add to Bag</div>
+                      <div class="rating">
+                        <span>$30</span>
+                        <span><del>$38</del></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="banner-inner container d-flex">
+        <div class="banner-desc">
+          <h4>Find Your Shade</h4>
+          <p>We will help you find the right shade for you</p>
+          <div href="#none" class="d-flex">
+            <a href="#none" class="btn-3 d-flex">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.414 6H29L30 7V25L29 26H3L2 25V7L3 6H10.586L12.292 4.292L13 4H19L19.708 4.292L21.414 6ZM4 24H28V8H21L20.292 7.708L18.586 6H13.414L11.708 7.708L11 8H4V24ZM7 10C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12C7.26522 12 7.51957 11.8946 7.70711 11.7071C7.89464 11.5196 8 11.2652 8 11C8 10.7348 7.89464 10.4804 7.70711 10.2929C7.51957 10.1054 7.26522 10 7 10ZM16 12C17.0609 12 18.0783 12.4214 18.8284 13.1716C19.5786 13.9217 20 14.9391 20 16C20 17.0609 19.5786 18.0783 18.8284 18.8284C18.0783 19.5786 17.0609 20 16 20C14.9391 20 13.9217 19.5786 13.1716 18.8284C12.4214 18.0783 12 17.0609 12 16C12 14.9391 12.4214 13.9217 13.1716 13.1716C13.9217 12.4214 14.9391 12 16 12ZM16 10C14.4087 10 12.8826 10.6321 11.7574 11.7574C10.6321 12.8826 10 14.4087 10 16C10 17.5913 10.6321 19.1174 11.7574 20.2426C12.8826 21.3679 14.4087 22 16 22C17.5913 22 19.1174 21.3679 20.2426 20.2426C21.3679 19.1174 22 17.5913 22 16C22 14.4087 21.3679 12.8826 20.2426 11.7574C19.1174 10.6321 17.5913 10 16 10Z" fill="#F8F8F8"/>
+                </svg>
+                <span>Try it out</span>                
+            </a>
+          </div>
+        </div>
+        <div class="banner-img">
+          <img src="./images/banner-img.png">
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-products" class="products2">
+      <div class="featured-products-inner container style2">
+        <div class="featured-products-title-wrap">
+          <h2>Chosen For You</h2>
+          <p>Powerful Sets To Save Your Time</p>
+        </div>
+        <div class="products container d-flex-2">
+          <div class="product">
+            <div class="top">
+              <img src="./images/product-2-1.png">
+            </div>
+            <div class="bottom">
+              <h4>Duo-tone buildable Foundation</h4>
+              <span>50 shades</span>
+              <div class="d-flex btn-2">
+                <div>Add to Bag</div>
+                <div class="rating">
+                  <span>$30</span>
+                  <span><del>$38</del></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="top">
+              <img src="./images/product-2-2.png">
+            </div>
+            <div class="bottom">
+              <h4>Duo-tone buildable Foundation</h4>
+              <span>50 shades</span>
+              <div class="d-flex btn-2">
+                <div>Add to Bag</div>
+                <div class="rating">
+                  <span>$30</span>
+                  <span><del>$38</del></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="top">
+              <img src="./images/product-2-3.png">
+            </div>
+            <div class="bottom">
+              <h4>Duo-tone buildable Foundation</h4>
+              <span>50 shades</span>
+              <div class="d-flex btn-2">
+                <div>Add to Bag</div>
+                <div class="rating">
+                  <span>$30</span>
+                  <span><del>$38</del></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-4 d-flex">
+          <a href="#none">Shop Our Sets</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-inner container">
+        <h2><b>About</b>Canopy</h2>
+        <div class="about-info-wrap d-flex">
+          <div class="about-box">
+            <img src="./images/about-img-1.png" alt="어바웃 아이콘 1번입니다.">
+            <h5>Reliable</h5>
+            <p>
+              We stand behind our products and give genuine advice with customer’s best interest at heart
+            </p>
+          </div>
+          <div class="about-box">
+            <img src="./images/about-img-2.png" alt="어바웃 아이콘 2번입니다.">
+            <h5>Customizable nature</h5>
+            <p>
+              Our products allow user to assume control of the color
+            </p>
+          </div>
+          <div class="about-box">
+            <img src="./images/about-img-3.png" alt="어바웃 아이콘 3번 입니다.">
+            <h5>Cruelty-free</h5>
+            <p>
+              We made our products not only inclusive for human but also crutely-free for animals
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="discover">
+      <div class="discover-inner container">
+        <div class="discover-title-wrap">
+          <h2>Discover Even More</h2>
+          <p>Explore Your Beauty With Different Shades Of Color</p>
+        </div>
+        <div class="discover-content-wrap d-flex">
+          <div class="discover-box">
+            <a href="#none" class="discover-img">
+              <img src="./images/discover-img-1.png" alt="디스커버리 이미지 1번 입니다.">
+            </a>
+            <a href="#none" class="discover-info-box">
+              Face +
+            </a>
+          </div>
+          <div class="discover-box">
+            <a href="#none" class="discover-img">
+              <img src="./images/discover-img-2.png" alt="디스커버리 이미지 2번 입니다.">
+            </a>
+            <a href="#none" class="discover-info-box">
+              Lip +
+            </a>
+          </div>
+          <div class="discover-box">
+            <a href="#none" class="discover-img">
+              <img src="./images/discover-img-3.png" alt="디스커버리 이미지 3번 입니다.">
+            </a>
+            <a href="#none" class="discover-info-box">
+              Kits +
+            </a>
+          </div>
+          <div class="discover-box">
+            <a href="#none" class="discover-img">
+              <img src="./images/discover-img-4.png" alt="디스커버리 이미지 4번 입니다.">
+            </a>
+            <a href="#none" class="discover-info-box">
+              Eyes +
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-inner container">
+        <div class="footer-info-wrap d-flex-3">
+          <div class="footer-info-box box1">
+            <div class="footer-logo">
+              <a href="#none">
+                <img src="./images/footer-logo.png" alt="푸터로고입니다."> .
+              </a>
+            </div>
+            <p>
+              Sign up for email updates on products, launches, and events. Unsubscribe anytime
+            </p>
+            <form action="" class="footer-email-form d-flex">
+              <input type="email" placeholder="Email">
+              <button type="submit" class="btn-email">Submit</button>
+            </form>
+          </div>
+          <div class="footer-info-box box2">
+            <h5 class="footer-info-sub-title">About Minisque</h5>
+            <a href="#none">About Us</a>
+            <a href="#none">Career</a>
+            <a href="#none">Company Blog</a>
+          </div>
+          <div class="footer-info-box box2">
+            <h5 class="footer-info-sub-title">Help</h5>
+            <a href="#none">Contact</a>
+            <a href="#none">Freedom Gift Card</a>
+            <a href="#none">Return & Exchanges</a>
+            <a href="#none">Help & FAQ</a>
+          </div>
+          <div class="footer-info-box box2">
+            <h5 class="footer-info-sub-title">Contact Us</h5>
+            <p>127 West 30th Street, 9th Floor <br> New York, NY 10001</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- ====== Jquery ====== -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
